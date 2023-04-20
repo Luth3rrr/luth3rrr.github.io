@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+      <title>Mugi</title>
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <script src="home.js"></script>
+      <link rel="icon" href="images/logo.jpeg">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3854239369327899"
+     crossorigin="anonymous"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+
+    <meta name="google-site-verification" content="P5FGteQzl_7_t8EfWxFgc9UaER-GPTnp9wfWpe653NA" />
+      <script src="timer.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYPBZS5WM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SYPBZS5WM2');
+</script>
+
+    
+  </head>
+
+    <body>
+
+        <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+  <script>
+    AOS.init();
+  </script>
+	  <div class="loader">
+    <img src="loading.gif" alt="Loading..." />
+</div>
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" >
+              <img class="logo" src="images/logo.jpeg"  />
+		</a>
+    
+		<nav>	
+
+		 <ul class="nav-bar"><div class="bg">  </div>
+       <button id="loginBtn">
+  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo">
+  <span>התחבר עם גוגל</span>
+</button>
+			<li><a class="nav-link active" href="#home">ראשי</a></li>
+			<li><a class="nav-link" href="#projects">משחקים</a></li>
+      <li><a class="nav-link" href="#new">משחק החודש</a></li>
+      <!-- <li><a class="nav-link" href="#new">הפינה של עמרי</a></li> -->
+      <li><a class="nav-link" href="credits.html">קרדיטים</a></li>
+      <li><a class="nav-link" href="/stocks.html">בעלי המניות</a></li>
+      <li><a class="nav-link" href="/suggestions.html">הצעות</a></li>
+
+  
+         <!--<li><a class="nav-link" href="https://www.mugitz.com/last-vresion.html">הגרסא הקודמת</a></li>-->
+          
+       
+
+      
+		 </ul>
+
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+<!--  <audio id="bg-music" src="back.mp3" autoplay>
+    Your browser does not support the audio element.
+  </audio> -->
+
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+
+		  <h3>הכל התחיל מאמא צדף<hr></h3>
+       <p id="welcomeMsg"></p>
+      <p>אתם מחוברים לגרסה: 2.1.2</p>
+		  <p>.כל משחקי צדף המקוריים במקום אחד</p>
+		  <p>לרשותכם המשחקים של משפחת בן-צדף אשר כולנו מעריצים</p>
+      <p>תלחצו על כפתור המשחקים למעלה כדי לראות את המשחקים הצדפיים שלנו</p>
+      <p>אל תשכחו לספר לחברים ולעזור למשפחה לגדול</p>
+      <p class="created-by">האתר נוצר על ידי פטט</p>
+      <!-- <p>:הבוט שלנו</p> -->
+
+             			<div id="gpt" class="card" >
+			    <img class="work-img" src="images/gpt.png">
+			    <a href="/iris.html" target="_blank"> 
+				<div class="work-content">איריס</div>
+</a>            </div>
+<!--              <button id="joke-button">לחץ לבדיחה</button>
+ -->
+       
+	  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <a href="#" target="_blank"> </a>
+			  <a href="#" target="_blank"> </a>
+			  <a href="#" target="_blank"> </a>
+			  <a href="#" target="_blank"> </a>
+			  <a href="#" target="_blank"> </a>
+		    </div>
+			 
+		 </section> 
+	  </div>  
+
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>משחקי בן-צדף<hr></h3>
+
+      <h2>:רשימת המשחקים שלנו</h2>
+      <h2>(לחצו על שמות המשחקים כדי לשחק)</h2>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+
+
+        			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/meteors.jpeg">
+			    <a href="/asteroids.html" target="_blank"> 
+				<div class="work-content">אמאטאורים</div>
+          </a></div>
+            </div>
+
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/rocket.jpeg">
+				<a href="https://rocket.mugitz.com" target="_blank"> 
+				<div class="work-content">צדף ליג</div>
+        </a></div>
+            </div>
+            <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/poker.jpeg">
+				<a href="/poker.html" target="_blank"> 
+				<div class="work-content">פוקרצדף</div>
+        </a></div>
+            </div>
+            <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/number.jpeg">
+				<a href="/guess_the_number.html" target="_blank"> 
+				<div class="work-content">ניחושצדף</div>
+        </a></div>
+            </div> 
+        
+            	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPQ5epB2yq2yLVBbrv2zwlJb22w-ySKla5i8elEaHdPM1yzNLowtorlDE6tleyXnh9LA&usqp=CAU">
+			    <a href="/pool.html" target="_blank"> 
+				<div class="work-content">ביליארדצדף</div>
+          </a></div>
+		  </div>
+      	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/snake.jpeg">
+			    <a href="/snake.html" target="_blank"> 
+				<div class="work-content">נחשצדף</div>
+          </a></div>
+		  </div>
+            	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB01uiVE6aFCwYEwkcl8s_Kwp9skwLfvmCPQ&usqp=CAU">
+			    <a href="https://2048.mugitz.com" target="_blank"> 
+				<div class="work-content">אלפיים ארבעיםצדף</div></a></div>
+		  </div>
+      <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/pacman.jpeg">
+			    <a href="/pacman.html" target="_blank"> 
+				<div class="work-content">פאקצדף</div>
+          </a></div>
+		  </div>
+        
+              <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/race.jpeg">
+			    <a href="/race.html" target="_blank"> 
+				<div class="work-content">מירוצדף</div>
+          </a></div>
+		  </div>
+                     <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzg-lglKH4GHNY60ZKOdWKadInGbKNIp6guA&usqp=CAU">
+			    <a href="https://cookie.mugitz.com" target="_blank"> 
+				<div class="work-content">עוגיות סבתא</div>
+          </a></div>
+		  </div>
+            <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/x-o.png">
+			    <a href="/x-o.html" target="_blank"> 
+				<div class="work-content">צדף-מעוז</div></a></div>
+		  </div>
+          <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://play-lh.googleusercontent.com/sDZq0Uq1rGPM9xD0sBoD5B2XCaPkYeRwLFGCfJ87vYuHYooGLyz4WI536zJyu8jX0nY=w240-h480-rw">
+			    <a href="/keyguess.html" target="_blank"> 
+				<div class="work-content">אותיתצדף</div>
+          </a></div>
+		  </div> 
+              <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMZlSl7M6xqGjs0FxQYKZnir1YnyD2zh7Ow&usqp=CAU">
+			    <a href="/cube.html" target="_blank"> 
+			<div class="work-content">קובייהצדף</div>
+          </a></div>
+		  </div>
+         
+              <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/rocket ship.jpeg">
+			    <a href="/rocketship.html" target="_blank"> 
+			<div class="work-content">צדף בחלל</div>
+          </a></div>
+  
+		  </div>
+                      <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/parking.jpeg">
+			    <a href="/parking.html" target="_blank"> 
+			<div class="work-content">חנייתצדף</div>
+          </a></div>
+  
+		  </div>
+                      <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/tetris.jpeg">
+			    <a href="/tetris.html" target="_blank"> 
+			<div class="work-content">צדףטריס</div>
+          </a></div>
+  
+		  </div>
+           <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://code-projects.org/wp-content/uploads/2018/10/Screenshot-903.png">
+			    <a href="/maze.html" target="_blank"> 
+			<div class="work-content">מבוכים וצדפים</div>
+          </a></div>
+  
+		  </div>
+           <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/clumsybird.png">
+			    <a href="/clumsy-bird.html" target="_blank"> 
+			<div class="work-content">פלאפי צדף</div>
+          </a></div>
+  
+		  </div>
+           <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="https://allma.si/blog/wp-content/uploads/2022/02/flipping-cards-in-memory-game.gif">
+			    <a href="https://mugitz.com/memory.html" target="_blank"> 
+			<div class="work-content">צדף הזיכרון</div>
+          </a></div>
+  
+		  </div>
+           <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/s.jpeg">
+			    <a href="https://mugitz.com/chess.html" target="_blank"> 
+			<div class="work-content">שחמטצדף</div>
+          </a></div>
+  
+		  </div>
+                   <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/tower.jpeg">
+			    <a href="https://tower.mugitz.com" target="_blank"> 
+			<div class="work-content">מגדלצדף</div>
+          </a></div>
+  
+		  </div>
+ <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/spcy.jpeg">
+			    <a href="https://spicy-snake.mugitz.com" target="_blank"> 
+			<div class="work-content">נחש תימני</div>
+          </a></div>
+        
+		  </div>
+ <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/images.jpg">
+			    <a href="https://bounce.mugitz.com/game.html" target="_blank"> 
+			<div class="work-content">כדורצדף</div>
+          </a></div>
+        
+		  </div>
+         <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/drift.jpeg">
+			    <a href="https://drift-hunters.mugitz.com" target="_blank"> 
+			<div class="work-content">צדף דריפט</div>
+            </a></div>
+        
+		  </div>
+        <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/motox.jpeg">
+			    <a href="https://moto3.mugitz.com" target="_blank"> 
+			<div class="work-content">אופנוצדף</div>
+          </a></div>
+        
+		  </div>
+         <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/motoxw.jpeg">
+			    <a href="https://moto3-winter.mugitz.com" target="_blank"> 
+			<div class="work-content">אופנוצדף חורף</div>
+          </a></div>
+        
+		  </div>
+         <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/tunnel.jpeg">
+			    <a href="https://tunnel.mugitz.com" target="_blank"> 
+			<div class="work-content">מנהרת צדף</div>
+          </a></div>
+        
+		  </div>
+         <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/baseball.jpeg">
+			    <a href="https://baseball.mugitz.com" target="_blank"> 
+			<div class="work-content">בייסבול צדף</div>
+          </a></div>
+        
+		  </div>
+         <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/sheela.jpeg">
+			    <a href="https://maze.mugitz.com" target="_blank"> 
+			<div class="work-content">המשחק ה-30</div>
+          </a></div>
+        
+		  </div>
+                         <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/snow.jpeg">
+			    <a href="/snow.html" target="_blank"> 
+			<div class="work-content">צדף שלג</div>
+   </a></div>
+        
+		  </div>
+                                 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/race2.jpeg">
+			    <a href="/stunt-race.html" target="_blank"> 
+			<div class="work-content">מכוניותצדף</div>
+             </a></div>
+        
+		  </div>
+                                 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/swerve.jpeg">
+			    <a href="/swerve.html" target="_blank"> 
+			<div class="work-content">צדף דריפט 2</div>
+             </a></div>
+        
+		  </div>
+		  										 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/circle-o.jpeg">
+			    <a href="/circle.html" target="_blank"> 
+					<div class="work-content">כדורצדף 2</div>
+             </a></div>
+
+	  </div>
+	  <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/snake2.jpeg">
+			    <a href="/snake2.html" target="_blank"> 
+			<div class="work-content">נחשצדף 2</div>
+          </a></div>
+		 </div>
+		 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/basketbsll.jpeg">
+			    <a href="/basketball.html" target="_blank"> 
+			<div class="work-content">צדףסל</div>
+             </a></div>
+			</div>
+
+<!-- 			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/mountainmaze.png">
+			    <a href="https://mountain-mazebe-mugi.amit12312312312.repl.co" target="_blank"> 
+<!-- 			<div class="work-content">המשחק של יואב</div></a>
+			</div> -->
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/paper.-io.jpeg">
+			    <a href="/paperio.html" target="_blank"> 	
+			<div class="work-content">צדף שטחים</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/papery.jpeg">
+			    <a href="/papery-plans.html" target="_blank"> 
+			<div class="work-content">מטוס מצדף</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/fall-guys.jpeg">
+			    <a href="/fall-guys.html" target="_blank"> 
+			<div class="work-content">צדף גאיז</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/tanukisunsetbe.jpeg">
+			    <a href="/tanukisunset.html" target="_blank"> 
+			<div class="work-content">סמורצדף</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/soccer.jpeg">
+			    <a href="/soccer.html" target="_blank"> 
+			<div class="work-content">צדףרגל</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/run3.jpeg">
+			    <a href="/run3.html" target="_blank"> 
+			<div class="work-content">קפיצותצדף</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/crossy.jpeg">
+			    <a href="/crossy-road.html" target="_blank"> 
+			<div class="work-content">קרוסי צדף</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/10morebullets.jpeg">
+			    <a href="/10-bullets.html" target="_blank"> 
+			<div class="work-content">יריותצדף</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/subway.jpeg">
+			    <a href="/subway.html" target="_blank"> 
+			<div class="work-content">סאבוואי צדף</div>
+          </a></div>
+			</div>
+			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/cubefield.jpeg">
+			    <a href="/tunnel2.html" target="_blank">
+			<div class="work-content">מנהרת צדף 2</div>
+           </a></div>
+			</div>
+        			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/soccerrandom.png">
+			    <a href="/ugly-soccer.html" target="_blank"> 
+			<div class="work-content">צדףרגל 2 </div>
+          </a></div>
+			</div>
+                			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/aiart.jpeg">
+			    <a href="/ai-art.html" target="_blank"> 
+			<div class="work-content">תמונוצדף</div>
+          </a></div>
+			</div>
+                        			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/stickmanhook.jpeg">
+			    <a href="/stickman.html" target="_blank"> 
+			<div class="work-content">ספיידרצדף</div>
+          </a></div>
+			</div>
+                                			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/volleyrandom.jpeg">
+			    <a href="/volleyrandom.html" target="_blank"> 
+			<div class="work-content">צדףעף</div>
+          </a></div>
+			</div>
+    			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/driftboss.jpeg">
+			    <a href="/drift-boss.html" target="_blank"> 
+			<div class="work-content">צדף דריפט 2</div>
+          </a></div>
+			</div>
+<!--           	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/icecube.jpeg">
+			    <a href="https://icecube.mugitz.com" target="_blank"> 
+			<div class="work-content">קרח צדף</div></a>
+			</div> -->
+          	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/truckrush.jpeg">
+			    <a href="/trucks-rush.html" target="_blank"> 
+			<div class="work-content">משאיותצדף</div>
+          </a></div>
+			</div>     
+                  	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/basketandball.jpeg">
+			    <a href="/basketandball.html" target="_blank"> 
+			<div class="work-content">צדףסל 2</div>
+          </a></div>
+			</div> 
+            	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/antiterorist.png">
+			    <a href="/anti-terrorist.html" target="_blank"> 
+			<div class="work-content">צדף מחסל</div>
+          </a></div>
+			</div>    
+             	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/world-cup.jpeg">
+			    <a href="/world-cup.html" target="_blank"> 
+			<div class="work-content">מונדיאלצדף</div>
+          </a></div>
+			</div>     
+                 	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/gunspin.jpeg">
+			    <a href="/gunspin.html" target="_blank"> 
+			<div class="work-content">אקדח מסתובבצדף</div></a></div>
+			</div>      
+                   	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/tamplerun.jpeg">
+			    <a href="/tamplerun.html" target="_blank"> 
+			<div class="work-content">צדףראן</div>
+          </a></div>
+			</div>      
+                           	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/shortlife.jpeg">
+			    <a href="/shortlife.html" target="_blank"> 
+			<div class="work-content">חיים רק צדף אחד</div></a></div>
+			</div>
+       	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/slopeball.jpeg">
+			    <a href="/slopeball.html" target="_blank"> 
+			<div class="work-content">מנהרת צדף 3</div></a></div>
+			</div>
+                		 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/geometry.jpeg">
+			    <a href="/geometry.html" target="_blank"> 
+			<div class="work-content">גאומטריצדף</div>
+          </a></div>
+                     </div>
+                		 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/shards.jpeg">
+			    <a href="/shards.html" target="_blank"> 
+			<div class="work-content">רסיסיםצדף</div>
+          </a></div>
+			</div>
+             		 <div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/bouncing-hell.jpeg">
+			    <a href="/bouncing-hell.html" target="_blank"> 
+			<div class="work-content">גיהינוםצדף</div>
+          </a></div>
+			</div>
+                     <div class="card">
+			    <img class="work-img" src="images/ball3.png">
+			    <a href="/ball3.html" target="_blank"> 
+			<div class="work-content">כדורצדף 3</div>
+          </a>
+			</div>
+           <div class="card">
+			    <img class="work-img" src="images/jetpack.jpeg">
+			    <a href="/jetpack.html" target="_blank"> 
+			<div class="work-content">ג'טפגצדף</div>
+          </a>
+			</div>  
+             <div class="card">
+			    <img class="work-img" src="images/laps.jpeg">
+			    <a href="/laps.html" target="_blank"> 
+			<div class="work-content">סיבובים צדף</div>
+          </a>
+			</div>  
+
+        	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/slopeball2.jpeg">
+			    <a href="/slopeball2.html" target="_blank"> 
+			<div class="work-content">מנהרת צדף מולטיפלייר</div>
+         </a></div>
+
+			</div> 
+            	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/target.png">
+			    <a href="/target.html" target="_blank"> 
+			<div class="work-content">מטרה צדף</div>
+         </a></div>
+</div>
+                
+             	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/deatrun.jpeg">
+			    <a href="/death_run_builds.html" target="_blank"> 
+			<div class="work-content">מכשול צדף</div>
+         </a></div>
+</div>
+                     	<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/archery.jpeg">
+			    <a href="/archery.html" target="_blank"> 
+			<div class="work-content">חץ וצדף</div>
+         </a></div>
+</div>
+ 
+			</div>  
+<!--     
+      
+    			<div data-aos='fade-up'><div class="card">
+        	<div class="girls">
+			    <img class="work-img" src="images/(0)tiktokgame.jpeg">
+			    <a href="https://catwalk-fashion.mugitz.com" target="_blank"> 
+			<div class="work-content">הליכת-מסלולצדף</div></a>
+			</div>
+          </div>
+    
+            			<div data-aos='fade-up'><div class="card">
+        	<div class="girls">
+			    <img class="work-img" src="images/(1)BABY-CLEANUP-HOUSE.jpeg">
+			    <a href="https://baby-cleanup.mugitz.com" target="_blank"> 
+			<div class="work-content">ניקיונצדף</div></a>
+			</div>
+          </div>
+            			<div data-aos='fade-up'><div class="card">
+
+              	<div class="girls">
+			    <img class="work-img" src="images/(3)BABY-HAZEL.jpeg">
+			    <a href="https://baby-hazel.mugitz.com" target="_blank"> 
+			<div class="work-content">בישולצדף</div></a>
+			</div>
+                  </div>
+        
+                                			<div data-aos='fade-up'><div class="card">
+
+              	<div class="girls">
+			    <img class="work-img" src="images/(4)FLORAL-MANICURE.jpeg">
+			    <a href="https://manicure.mugitz.com" target="_blank"> 
+			<div class="work-content">מניקורצדף</div></a>
+			</div>
+        </div>                                                     			<div data-aos='fade-up'><div class="card">
+
+              	<div class="girls">
+			    <img class="work-img" src="images/(5)WOW-GIRL.webp">
+			    <a href="https://wow-girl.mugitz.com" target="_blank"> 
+			<div class="work-content">איפור צדף</div></a>
+			</div>
+      </div>  
+                  			<div data-aos='fade-up'><div class="card">
+
+              	<div class="girls">
+			    <img class="work-img" src="images/(2)instagirls.webp">
+			    <a href="https://instagirls.mugitz.com" target="_blank"> 
+			<div class="work-content">אינסטהצדף</div></a>
+			</div>
+      </div> 
+                  			<div data-aos='fade-up'><div class="card">
+
+              	<div class="girls">
+			    <img class="work-img" src="images/(6)SHOE-DESIGNER.webp">
+			    <a href="https://show-design.mugitz.com" target="_blank"> 
+			<div class="work-content">נעליים צדף</div></a>
+			</div>
+      </div> 
+                          			<div data-aos='fade-up'><div class="card">
+
+              	<div class="girls">
+			    <img class="work-img" src="images/(7)PROM-PHOTOSHOOT.webp">
+			    <a href="https://prom-photoshoot.mugitz.com" target="_blank">
+			<div class="work-content">פרום צדף</div></a>
+			</div>
+      </div> 
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<!--           			<div data-aos='fade-up'><div class="card">
+			    <img class="work-img" src="images/">
+			    <a href="" target="_blank"> 
+			<div class="work-content">,,,</div></a>
+			</div>  -->
+		<!--──────────────Contact────────────────-->
+<!-- 	  <div id="Tzedeff">
+		  <!--────social media links─────-->
+<!-- 		  <h3>:משפטי עמרי<hr></h3>
+      <p>(עדיין  בבנייה)</p> -->
+      <!--
+      <p>"?הפלתי על עצמי משקולת וכואב לי עכשיו מה לעשות"</p>
+       <p>"אנחנו רק גרגר חול בתוך יקום אינסופי וכלום לא משנה והכל נגמר בסוף אז בוא נאכל שניצל"</p>
+       <p>"רצחתי את הפסיכולוג שלי כי הוא אמר שאני באמת מצחיק"</p>
+       <p>"!בוא ניצור טישו שגורם לך להתעטש, נעשה מיליונים"</p>
+       <p>"אמא שלך היא כמו חניון, כל הזמן נכנסים אליה אנשים"</p>
+             <p>"אני אשים מישמיש מיובש במים ואולי זה יהפוך למישמיש רגיל"</p>
+         <p>"?אם פטט היה פטטי אז זה היה פטטי שפטט הוא פטטי"</p>
+        <p>"סינים הם חיקוי סיני של יפנים"</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+             -->                        
+		  </div>
+      <div class="filter"></div>
+ <div id="new"> 
+    
+<h3>משחק החודש<hr></h3>
+<p>ינואר: מנהרת צדף</p>
+<p>פברואר: מנהרת צדף 3</p>
+<p>מרץ: כדורצדף 3</p>
+   
+	</main>
+	  <footer class="copyright">© 2023 
+		  <a >MugiTech Inc.</a>
+      		  <a >(Created By Patet)</a>
+
+     </footer>
+	
+  </div>
+      <script type="module" src="script.js"></script>
+<div id="time-on-site"></div>
+
+  </body>
+        
+</html>

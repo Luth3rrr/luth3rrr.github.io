@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(2, 78, 136); /* Background Image */
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+iframe {
+  height: 600px;
+  width: 100%;
+  max-width: 800px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(172, 46, 46); /* Green */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+.full::before {
+  content: "\f065"; /* Font Awesome Icon */
+  margin: 10px;
+}
+.full {
+  background-color: black;
+}
+.home::before {
+  content: "\f015";
+  margin: 10px;
+}
+.home {
+  background-color: rgb(1, 159, 227);
+}
+.teacher {
+  background-color: rgb(255, 0, 0);
+}
+.teacher::before {
+  content: "\f51c";
+  margin: 10px;
+}
+#changeBtn{
+    background-color: rgb(228, 92, 1);
+}
+#changeBtn::before{
+   content: "\f51c";
+  margin: 10px;
+}
+@media screen and (min-width: 800px) {
+  iframe {
+    width: calc(100vw - 40px); /* Subtract the margins from the viewport width */
+  }
+}
