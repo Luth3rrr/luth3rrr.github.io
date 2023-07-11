@@ -155,7 +155,7 @@ font-family: 'Open Sans Hebrew Condensed', serif;
 }
 
 #home .filter{
-	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr85EJ7VL7MKKNuoZRPSBTgucoSsFHHn_v_A&usqp=CAU') no-repeat;
+	background: url('images/background.jpeg'') no-repeat;
 	background-size: cover;
 	background-position:center;
     position: absolute;
