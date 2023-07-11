@@ -278,7 +278,7 @@ font-family: 'Open Sans Hebrew Condensed', serif;
 	width: 150px;
 	height:200px;
 	border-radius:12px;
-	background: url('images/background.jpg') no-repeat;
+	background: url('images/card-back.jpeg') no-repeat;
 }
 
 .card img{
