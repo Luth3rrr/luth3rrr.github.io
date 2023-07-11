@@ -81,17 +81,17 @@ button {
   margin: 10px;
 }
 .home {
-  background-color: rgb(1, 159, 227);
+  background-color: rgb(139 15 111);
 }
 .teacher {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255 0 34 / 66%);
 }
 .teacher::before {
   content: "\f51c";
   margin: 10px;
 }
 #changeBtn{
-    background-color: rgb(228, 92, 1);
+    background-color: rgb(228 50 1);
 }
 #changeBtn::before{
    content: "\f51c";
