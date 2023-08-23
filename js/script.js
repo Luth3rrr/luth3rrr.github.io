@@ -58,15 +58,15 @@ window.onload = () => navSlide();
 //     localStorage.setItem('musicPlayed', true);
 // }
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyDz0obDDy51SeY6RHcHGPrGAi0Ol1-8VBE",
-    authDomain: "mugi-2023.firebaseapp.com",
-    projectId: "mugi-2023",
-    storageBucket: "mugi-2023.appspot.com",
-    messagingSenderId: "257017906410",
-    appId: "1:257017906410:web:38bb7865692242b3628393",
-    measurementId: "G-8HSQ31CXBF"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyDGhoxtcdUjczXJSbcGuWOxiMmTlNmmYbo",
+  authDomain: "mugi-89580.firebaseapp.com",
+  projectId: "mugi-89580",
+  storageBucket: "mugi-89580.appspot.com",
+  messagingSenderId: "879625806245",
+  appId: "1:879625806245:web:375e806b82d0e6540b084c",
+  measurementId: "G-CM8V0CYQ85"
+};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
