@@ -48,7 +48,7 @@ window.onload = () => navSlide();
     myImage.addEventListener("click", function() {
         counter++;
         if (counter === 10) {
-            window.location.href = "https://www.mugitz.com/dictionary.html";
+            window.location.href = "https://www.mugitz.com/images/umpa_lumpa.jpeg";
         }
     });
     }
