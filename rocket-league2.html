@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mugi</title>
+    <link rel="stylesheet" href="/css/game.css"/>
+    <script src="/js/script.js"></script>
+    <script src="full.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-cmGnN1F3N3wNp8Sfm3S7tqMCqDbXhC3pLhqkStP+5dIRv5ZJw/YlPzr6r21YF+X/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="images/logo.jpeg">
+    <script src="/js/game.js"></script>
+            <script src="/js/script.js"></script>
+      <script src="timer.js"></script>
+
+
+
+  </head>
+   <div class="loader">
+    <img src="loading.gif" alt="Loading..." />
+</div>
+  <body
+    <div class="container">
+      <iframe
+        src="https://raw.githack.com/carbonsystems-dev/gamevault/main/Rocket-League/index.html"
+      ></iframe>
+      <div>
+        <button id="home" class="home">חזרה לדף הראשי</button>
+        <button class="teacher"> מורה מגיעה </button>
+          <button id="changeBtn">החלף קישור מורה מגיעה</button>    
+<button id="full" class="full" onclick="openFullscreen('full')">מסך מלא</button>
+        
+      </div>
+    </div>
+  </body>
+<script>
+  
+      
+const DEFAULT_URL = "https://my.classoos.com/il/books/textbooks";
+
+const goBtn = document.querySelector('.teacher');
+const changeBtn = document.getElementById('changeBtn');
+
+let url = localStorage.getItem('savedUrl');
+if (!url) {
+  url = prompt('הכנס קישור לאתר לכפתור מורה מגיעה (תוכל לשנות את זה תמיד והאתר ישמור את בקשתך)', DEFAULT_URL);
+  if (url) {
+    if (isValidUrl(url)) {
+      localStorage.setItem('savedUrl', url);
+    } else {
+      alert('אנא מלא קישור תקין');
+    }
+  } else {
+    url = DEFAULT_URL;
+    localStorage.setItem('savedUrl', url);
+  }
+}
+
+goBtn.addEventListener('click', function() {
+  const url = localStorage.getItem('savedUrl');
+  if (url) {
+    const newWindow = window.open(url, '_blank', 'width='+window.innerWidth+',height='+window.innerHeight+',fullscreen=yes,scrollbars=yes');
+    if (newWindow) {
+      newWindow.focus();
+    }
+  }
+});
+
+changeBtn.addEventListener('click', function() {
+  const url = prompt('הכנס קישור לאתר לכפתור מורה מגיעה (תוכל לשנות את זה תמיד והאתר ישמור את בקשתך)', DEFAULT_URL);
+  if (url) {
+    if (isValidUrl(url)) {
+      localStorage.setItem('savedUrl', url);
+    } else {
+      alert('אנא מלא קישור תקין');
+      return;
+    }
+  }
+});
+
+function isValidUrl(url) {
+  // Very basic URL validation
+  return url.match(/^https?:\/\/.+$/);
+}
+
+</script>
+</html>
